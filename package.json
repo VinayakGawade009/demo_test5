@@ -1,0 +1,14 @@
+{
+  "name": "failing-node-project",
+  "version": "1.0.0",
+  "description": "A project designed specifically to fail CI/CD pipeline tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  }
+}
