@@ -2,5 +2,8 @@ function validateEmail(email) {
     if (!email) {
         return false;
     }
-    return email.includes('@');
-// Intentionally missing closing brace }
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+module.exports = { validateEmail };
