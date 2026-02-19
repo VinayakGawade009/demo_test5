@@ -1,6 +1,7 @@
-const { missing } = require('../src/importer');
+const missing = require('./does_not_exist.js');
+
+module.exports = { missing };
 
 test('importer missing file', () => {
-    // This will fail because importer.js failed to load due to missing require
     expect(missing).toBeDefined();
 });
